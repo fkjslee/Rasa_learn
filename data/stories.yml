@@ -2,6 +2,11 @@ version: "2.0"
 
 stories:
 
+- story: send message
+  steps:
+  - intent: send_msg
+  - action: action_send_msg
+
 - story: happy path
   steps:
   - intent: greet
