@@ -2,10 +2,10 @@ version: "2.0"
 
 stories:
 
-- story: send message
+- story: send command
   steps:
-  - intent: send_msg
-  - action: action_send_msg
+  - intent: send_command
+  - action: action_send_command
 
 - story: happy path
   steps:

@@ -16,7 +16,7 @@ from rasa_sdk.executor import CollectingDispatcher
 class ActionHelloWorld(Action):
 
     def name(self) -> Text:
-        return "action_send_msg"
+        return "action_send_command"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,

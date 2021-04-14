@@ -91,7 +91,7 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
     
-- intent: send_msg
+- intent: send_command
   examples: |
     - send a message
     - have a message

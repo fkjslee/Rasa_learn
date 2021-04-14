@@ -11,7 +11,7 @@ intents:
   - send_msg
 
 actions:
-  - action_send_msg
+  - action_send_command
 
 responses:
   utter_greet:
