@@ -8,7 +8,7 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  - send_msg
+  - send_command
 
 actions:
   - action_send_command
@@ -32,6 +32,11 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+slots:
+  account_number:
+    type: text
+    initial_value: "default command"
 
 session_config:
   session_expiration_time: 60

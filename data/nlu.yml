@@ -1,6 +1,10 @@
 version: "2.0"
 
 nlu:
+- regex: account_number
+  examples: |
+    - \d{10,12}
+
 - intent: greet
   examples: |
     - hey
@@ -93,6 +97,5 @@ nlu:
     
 - intent: send_command
   examples: |
-    - send a message
-    - have a message
-    - write messages
+    - my account number is [1234567891](account_number)
+    - This is my account number [1234567891](account_number)

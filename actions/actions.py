@@ -21,7 +21,12 @@ class ActionHelloWorld(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+            
+        cmd = tracker.get_slot("account_number");
+        
+        if cmd is None:
+            cmd = "qweff"
 
-        dispatcher.utter_message(text="start to test send msg")
+        dispatcher.utter_message(text="start to test send msg" + cmd);
 
         return []
